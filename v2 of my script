@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("nuffty12 gui", "Ocean")
+local Window = Library.CreateLib("nuffty12 V2 gui", "Ocean")
 
 -- MAIN
 local Main = Window:NewTab("Main")
