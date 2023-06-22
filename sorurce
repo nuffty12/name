@@ -1294,5 +1294,7 @@ PlayerSection:NewButton("chatlogs", "ButtonInfo", function()
 end)
 
 MainSection:NewButton("V2 of my script", "ButtonInfo", function()
-    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nuffty12/name/main/v2%20of%20my%20script"))()
 end)
+
+
