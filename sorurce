@@ -1300,16 +1300,3 @@ aimlock for gamesSection:NewButton("dragonware aimlock", "ButtonInfo", function(
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/ChaseSYNX/Scripts/main/DragonWareAimlock')))()
 end)
 
-guisSection:NewButton("blox fruits1", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://rasputin-bf.glitch.me/bloxfruits.lua"))()
-
-end)
-
-guisSection:NewButton("blox fruits2", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://gitlab.com/0x45.xyz/droplib/-/raw/master/drop-minified.lua"))():Init(config,game.CoreGui)
-end)
-
-guisSection:NewButton("blox fruits3", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://run.mocky.io/v3/b141f78e-9f27-4beb-94a7-7272a80958ce"))() 
-end)
-
