@@ -1296,7 +1296,3 @@ end)
 local Tab = Window:NewTab("aimlock for games")
 local Section = Tab:NewSection("aimlock for games")
 
-aimlock for gamesSection:NewButton("dragonware aimlock", "ButtonInfo", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/ChaseSYNX/Scripts/main/DragonWareAimlock')))()
-end)
-
