@@ -64,4 +64,7 @@ end)
 Section:NewButton("fly", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("made by nuffty12")
+Section:NewLabel("i hope you like it bitch")
 
