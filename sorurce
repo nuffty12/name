@@ -1315,3 +1315,23 @@ Section:NewButton("Fake Arceus", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()3
 end)
 
+Section:NewButton("Fake KRNK", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
+end)
+
+Section:NewButton("Fake Synapse", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+end)
+
+Section:NewButton("FRAKTURE Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/source.lua'),true))()
+end)
+
+Section:NewButton("Script Searcher", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
+end)
+
+Section:NewButton("MoonUI", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH/MoonUI-v13-102-SCRIPTS/main/MoonUI%20v13!"))()
+end)
+
