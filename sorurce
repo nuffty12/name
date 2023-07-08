@@ -1327,11 +1327,3 @@ Section:NewButton("FRAKTURE Hub", "ButtonInfo", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/source.lua'),true))()
 end)
 
-Section:NewButton("Script Searcher", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
-end)
-
-Section:NewButton("MoonUI", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH/MoonUI-v13-102-SCRIPTS/main/MoonUI%20v13!"))()
-end)
-
