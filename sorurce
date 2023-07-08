@@ -1296,3 +1296,22 @@ end)
 local Tab = Window:NewTab("aimlock for games")
 local Section = Tab:NewSection("aimlock for games")
 
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs")
+
+
+Section:NewButton("Gigachad Hub V3", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/OWJBWKQLAISH/GigaChad-Hub/main/Gigachad%20Hub%20V3'))()
+end)
+
+Section:NewButton("GamerScript Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game_Hub_v2/main/loader"))()
+end)
+
+Section:NewButton("Fake Arceus", "ButtonInfo", function()
+    --[[
+    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()3
+end)
+
