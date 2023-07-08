@@ -1296,4 +1296,14 @@ end)
 local Tab = Window:NewTab("aimlock for games")
 local Section = Tab:NewSection("aimlock for games")
 
+
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs")
+
+Section:NewButton("GigaChad Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/OWJBWKQLAISH/GigaChad-Hub/main/Gigachad%20Hub%20V3'))()
+end)
+
+Section:NewButton("Fake Krnl", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua%22))()
 end)
