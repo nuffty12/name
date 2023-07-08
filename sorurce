@@ -1296,3 +1296,4 @@ end)
 local Tab = Window:NewTab("aimlock for games")
 local Section = Tab:NewSection("aimlock for games")
 
+end)
