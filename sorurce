@@ -1308,22 +1308,5 @@ Section:NewButton("GamerScript Hub", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game_Hub_v2/main/loader"))()
 end)
 
-Section:NewButton("Fake Arceus", "ButtonInfo", function()
-    --[[
-    WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()3
-end)
-
-Section:NewButton("Fake KRNK", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/KRNL%20UI%20Remake.lua"))()
-end)
-
-Section:NewButton("Fake Synapse", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
-end)
-
-Section:NewButton("FRAKTURE Hub", "ButtonInfo", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/source.lua'),true))()
 end)
 
