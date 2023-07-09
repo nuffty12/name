@@ -1296,3 +1296,39 @@ end)
 local Tab = Window:NewTab("aimlock for games")
 local Section = Tab:NewSection("aimlock for games")
 
+
+local Tab = Window:NewTab("Hubs for aimlock")
+local Section = Tab:NewSection("Hubs for aimlock")
+
+Section:NewButton("Aimlock", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/dh1", true))()
+end)
+
+
+Section:NewButton("fake macro", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/youtubetutorials123/helo/main/123"))()
+end)
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs")
+
+Section:NewButton("V.G Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Section:NewButton("Bolts Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))()
+
+end)
+
+Section:NewButton("Nebula Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://tuba.bio/nebula/scripts/loader.lua', true))()
+end)
+
+Section:NewButton("Moon V3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/voiddscripts/moon/main/script.lua"))()
+end)
+
+Section:NewButton("Skeered Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+end)
+
