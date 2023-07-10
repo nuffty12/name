@@ -1,1 +1,1333 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("nuffty12 V1 gui", "Ocean")
 
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("auto money", "auto money makes you rich in da hood", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Zx061kiT", true))()
+
+end)
+MainSection:NewToggle("super player", "superjump and speed", function(state)
+    if state then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    else
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+local InfiniteJumpEnabled = False
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    end
+end)
+
+MainSection:NewButton("aimbot", "aimbot will give you god aim", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub', true))();
+end)
+
+
+--LOCAL PLAYER
+local Player  = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("Jumppower", "Jump super HIGH!!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+--Other
+--LOCAL Other
+local Other  = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+
+OtherSection:NewButton("fly", "fly gui super op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+OtherSection:NewButton("hd admin", "fe admin", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KMp8Jvsa",true))()
+end)
+
+
+OtherSection:NewToggle("invis", "invis when no one can see you", function(state)
+    if state then
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/paygammy/6741e61a09c8aabe9afd1635da856168/raw"))()
+    else
+        ResetCharacter.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+    end
+end)
+
+
+OtherSection:NewButton("rreset", "say reset and you reset", function()
+    function onChatted(msg, speaker)
+ 
+    source = string.lower(speaker.Name)
+    msg = string.lower(msg)
+ 
+    if msg == "reset" then
+        speaker.Character.Head:remove()
+    end
+end
+ 
+function onPlayerEntered(newPlayer)
+        newPlayer.Chatted:connect(function(msg) onChatted(msg, newPlayer) end) 
+end
+ 
+game.Players.ChildAdded:connect(onPlayerEntered)
+end)
+
+
+OtherSection:NewButton("fakelag", "fakelag is a toll", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DylanIsAKingL/Lua-Scripts/main/fake-lag.lua"))()
+end)
+
+
+MainSection:NewButton("da hood gui =", "rayx", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/FemWare0", true))()
+
+end)
+
+
+OtherSection:NewButton("auto win", "eh ldk", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/TowerOfHell/main/OpenSource.lua"))()
+end)
+
+
+OtherSection:NewButton("best hub", "just a hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/voiddscripts/moon/main/script.lua"))()
+end)
+local Tab = Window:NewTab("guis")
+local guisSection = Tab:NewSection("guis")
+
+
+guisSection:NewButton("thughub", "thughub is op hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/globalbankingelites/Scripts/main/ThugHub.lua'))()
+
+end)
+
+guisSection:NewButton("kidachi hub", "kidacehi hub is op", function()
+    loadstring(game:HttpGet('https://kidachi.xyz/Odyssey', true))()
+end)
+
+guisSection:NewButton("fool hub", "fool hub is super op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OneFool/fool-hub/main/Fool%20Hub%20Universal"))()
+
+end)
+
+guisSection:NewButton(" Ggui free", "for natural disaster", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+
+end)
+
+guisSection:NewButton("prison Life gui", "works", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/JS5SYqaU'),true))()
+end)
+
+MainSection:NewButton("antiafk", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+
+OtherSection:NewButton("da hood", "op da hood script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+OtherSection:NewButton("antiban", "cant get ban", function()
+    getgenv().credit = "HERE_CREDIT_NAME"
+
+
+if getgenv().credit == "HERE_CREDIT_NAME" then
+	print"script loaded"
+else
+	game.Players.LocalPlayer:Kick("Credit Is LOI!, Dont Touch IT")
+end
+end)
+
+
+local Tab = Window:NewTab("non working")
+local non workingSection = Tab:NewSection("non working")
+
+guisSection:NewButton("jailbreak3", "jailbreak", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+end)
+
+guisSection:NewButton("jailbreakgui2", "more jailbreak", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xxSirLotte/Salazar/main/SalazarHub"))()
+
+end)
+
+guisSection:NewButton("jailbreak1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d4b0843f800d5dcac07568e18190b7e.lua"))()
+end)
+
+guisSection:NewButton("jailbreak4", "key is z3aq017pd", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+
+end)
+
+guisSection:NewButton("squid game1", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/DomainX/main/Squid%20Game.lua'),true))()
+end)
+
+guisSection:NewButton("squid game2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pi-314Git/LunarSpirit/main/LunarFishGame.lua"))()
+
+end)
+
+guisSection:NewButton("squid game3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+guisSection:NewButton("squid game4", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kelvinouo/Hub/master/SquidGame_AutoWin.lua", true))()
+
+end)
+
+guisSection:NewButton("squid game5", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+guisSection:NewButton("bedwars", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+guisSection:NewButton("bedwars2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+guisSection:NewButton("natural disaster1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+
+end)
+
+guisSection:NewButton("natureal2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Natural%20Disaster'))()
+end)
+
+guisSection:NewButton("natureal3", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://gitlab.com/wspcontr/onemorehub/-/raw/main/scriptloader.lua'))()
+end)
+
+guisSection:NewButton("natural4", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+end)
+
+guisSection:NewButton("pet sim x", "ButtonInfo", function()
+   loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+end)
+
+guisSection:NewButton("pet sim z", "ButtonInfo", function()
+    getgenv().boothsnipe = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+
+guisSection:NewButton("rainbow friends", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Senpaigmx/CatHub/main/RainbowFriends.lua"))()
+end)
+
+guisSection:NewButton("rainbow frieds1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Rainbow-Friends.lua"))()
+end)
+
+guisSection:NewButton("rainbowfriends2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Rainbow-Friends/main/Main.lua'))()
+end)
+
+guisSection:NewButton("prison ilfe", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/JS5SYqaU'),true))()
+end)
+
+guisSection:NewButton("prison life2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+end)
+
+guisSection:NewButton("auto player", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nameless9000/RobloxPianoAutoplayer/main/script.lua"))()
+end)
+
+guisSection:NewButton("puzzles", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WinterDinder/Teamwork-Puzzles/main/Main", true))()
+end)
+
+local setting = Window:NewTab("setting")
+local settingSection = setting:NewSection("setting")
+
+settingSection:NewToggle("get more fps", "ToggleInfo", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+    else
+        loadstring(game:HttpGet("https://guard.lol/scripts/universalscript.lua",true))()
+    end
+end)
+
+settingSection:NewToggle("antiafk", "ToggleInfo", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+    else
+        loadstring(game:HttpGet("https://guard.lol/scripts/universalscript.lua",true))()
+    end
+end)
+
+
+MainSection:NewKeybind("the key is F", "key is F", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+MainSection:NewButton("pearl hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+
+end)
+
+MainSection:NewButton("arsenal", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mopsfl/rbxmopshub/main/loader.lua"))()
+end)
+
+guisSection:NewButton("race clicker", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/frankblox/rbxscripts/main/0raceclickern3w"))()print("Clicked")
+end)
+
+guisSection:NewButton("race cilcker1", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+end)
+
+guisSection:NewButton("doors", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/6kfed0tP"))()
+end)
+
+guisSection:NewButton("doors1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
+end)
+
+MainSection:NewButton("backflip", "ButtonInfo", function()
+    wait(5)
+
+--[[ Info ]]--
+
+local ver = "2.00"
+local scriptname = "feFlip"
+
+
+--[[ Keybinds ]]--
+
+local FrontflipKey = Enum.KeyCode.Z
+local BackflipKey = Enum.KeyCode.X
+local AirjumpKey = Enum.KeyCode.C
+
+
+--[[ Dependencies ]]--
+
+local ca = game:GetService("ContextActionService")
+local zeezy = game:GetService("Players").LocalPlayer
+local h = 0.0174533
+local antigrav
+
+
+--[[ Functions ]]--
+
+function zeezyFrontflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do 
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(-h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyBackflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyAirjump(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+		wait()
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")	
+	end
+end
+
+
+--[[ Binds ]]--
+
+ca:BindAction("zeezyFrontflip",zeezyFrontflip,false,FrontflipKey)
+ca:BindAction("zeezyBackflip",zeezyBackflip,false,BackflipKey)
+ca:BindAction("zeezyAirjump",zeezyAirjump,false,AirjumpKey)
+
+--[[ Load Message ]]--
+
+print(scriptname .. " " .. ver .. " loaded successfully")
+print("made by Zeezy#7203")
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1.5
+notifSound.Volume = 0.15
+notifSound.SoundId = "rbxassetid://170765130"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+
+
+end)
+
+MainSection:NewButton("fe fling power", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/gJC4kvgy'),true))()
+end)
+
+MainSection:NewButton("fe admin script", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
+
+MainSection:NewButton("fe god", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iHavoc101/Genesis-Studios/main/UserInterface/Luminosity.lua", true))()
+
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("nuffty12 gui", "Ocean")
+
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("auto money", "auto money makes you rich in da hood", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Zx061kiT", true))()
+
+end)
+MainSection:NewToggle("super player", "superjump and speed", function(state)
+    if state then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    else
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+local InfiniteJumpEnabled = False
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    end
+end)
+
+MainSection:NewButton("aimbot", "aimbot will give you god aim", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub', true))();
+end)
+
+
+--LOCAL PLAYER
+local Player  = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("Jumppower", "Jump super HIGH!!", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+--Other
+--LOCAL Other
+local Other  = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+
+OtherSection:NewButton("fly", "fly gui super op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+OtherSection:NewButton("hd admin", "fe admin", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KMp8Jvsa",true))()
+end)
+
+
+OtherSection:NewToggle("invis", "invis when no one can see you", function(state)
+    if state then
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/paygammy/6741e61a09c8aabe9afd1635da856168/raw"))()
+    else
+        ResetCharacter.MouseButton1Click:connect(function()
+	game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+    end
+end)
+
+
+OtherSection:NewButton("rreset", "say reset and you reset", function()
+    function onChatted(msg, speaker)
+ 
+    source = string.lower(speaker.Name)
+    msg = string.lower(msg)
+ 
+    if msg == "reset" then
+        speaker.Character.Head:remove()
+    end
+end
+ 
+function onPlayerEntered(newPlayer)
+        newPlayer.Chatted:connect(function(msg) onChatted(msg, newPlayer) end) 
+end
+ 
+game.Players.ChildAdded:connect(onPlayerEntered)
+end)
+
+
+OtherSection:NewButton("fakelag", "fakelag is a toll", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DylanIsAKingL/Lua-Scripts/main/fake-lag.lua"))()
+end)
+
+
+MainSection:NewButton("da hood gui =", "rayx", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/FemWare0", true))()
+
+end)
+
+
+OtherSection:NewButton("auto win", "eh ldk", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/TowerOfHell/main/OpenSource.lua"))()
+end)
+
+
+OtherSection:NewButton("best hub", "just a hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/voiddscripts/moon/main/script.lua"))()
+end)
+local Tab = Window:NewTab("guis")
+local guisSection = Tab:NewSection("guis")
+
+
+guisSection:NewButton("thughub", "thughub is op hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/globalbankingelites/Scripts/main/ThugHub.lua'))()
+
+end)
+
+guisSection:NewButton("kidachi hub", "kidacehi hub is op", function()
+    loadstring(game:HttpGet('https://kidachi.xyz/Odyssey', true))()
+end)
+
+guisSection:NewButton("fool hub", "fool hub is super op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OneFool/fool-hub/main/Fool%20Hub%20Universal"))()
+
+end)
+
+guisSection:NewButton(" Ggui free", "for natural disaster", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+
+end)
+
+guisSection:NewButton("prison Life gui", "works", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/JS5SYqaU'),true))()
+end)
+
+MainSection:NewButton("antiafk", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+
+OtherSection:NewButton("da hood", "op da hood script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+OtherSection:NewButton("antiban", "cant get ban", function()
+    getgenv().credit = "HERE_CREDIT_NAME"
+
+
+if getgenv().credit == "HERE_CREDIT_NAME" then
+	print"script loaded"
+else
+	game.Players.LocalPlayer:Kick("Credit Is LOI!, Dont Touch IT")
+end
+end)
+
+
+local Tab = Window:NewTab("non working")
+local non workingSection = Tab:NewSection("non working")
+
+guisSection:NewButton("jailbreak3", "jailbreak", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+end)
+
+guisSection:NewButton("jailbreakgui2", "more jailbreak", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xxSirLotte/Salazar/main/SalazarHub"))()
+
+end)
+
+guisSection:NewButton("jailbreak1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d4b0843f800d5dcac07568e18190b7e.lua"))()
+end)
+
+guisSection:NewButton("jailbreak4", "key is z3aq017pd", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+
+end)
+
+guisSection:NewButton("squid game1", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/DomainX/main/Squid%20Game.lua'),true))()
+end)
+
+guisSection:NewButton("squid game2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pi-314Git/LunarSpirit/main/LunarFishGame.lua"))()
+
+end)
+
+guisSection:NewButton("squid game3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+guisSection:NewButton("squid game4", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kelvinouo/Hub/master/SquidGame_AutoWin.lua", true))()
+
+end)
+
+guisSection:NewButton("squid game5", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+end)
+
+guisSection:NewButton("bedwars", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+guisSection:NewButton("bedwars2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+guisSection:NewButton("natural disaster1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+
+end)
+
+guisSection:NewButton("natureal2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hussain1323232234/My-Scripts/main/Natural%20Disaster'))()
+end)
+
+guisSection:NewButton("natureal3", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://gitlab.com/wspcontr/onemorehub/-/raw/main/scriptloader.lua'))()
+end)
+
+guisSection:NewButton("natural4", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+end)
+
+guisSection:NewButton("pet sim x", "ButtonInfo", function()
+   loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+end)
+
+guisSection:NewButton("pet sim z", "ButtonInfo", function()
+    getgenv().boothsnipe = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+end)
+
+guisSection:NewButton("rainbow friends", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Senpaigmx/CatHub/main/RainbowFriends.lua"))()
+end)
+
+guisSection:NewButton("rainbow frieds1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Rainbow-Friends.lua"))()
+end)
+
+guisSection:NewButton("rainbowfriends2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Rainbow-Friends/main/Main.lua'))()
+end)
+
+guisSection:NewButton("prison ilfe", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/JS5SYqaU'),true))()
+end)
+
+guisSection:NewButton("prison life2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+end)
+
+guisSection:NewButton("auto player", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nameless9000/RobloxPianoAutoplayer/main/script.lua"))()
+end)
+
+guisSection:NewButton("puzzles", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WinterDinder/Teamwork-Puzzles/main/Main", true))()
+end)
+
+local setting = Window:NewTab("setting")
+local settingSection = setting:NewSection("setting")
+
+settingSection:NewToggle("get more fps", "ToggleInfo", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+    else
+        loadstring(game:HttpGet("https://guard.lol/scripts/universalscript.lua",true))()
+    end
+end)
+
+settingSection:NewToggle("antiafk", "ToggleInfo", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+    else
+        loadstring(game:HttpGet("https://guard.lol/scripts/universalscript.lua",true))()
+    end
+end)
+
+
+MainSection:NewKeybind("the key is V", "key is V", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
+
+MainSection:NewButton("pearl hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+
+end)
+
+MainSection:NewButton("arsenal", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mopsfl/rbxmopshub/main/loader.lua"))()
+end)
+
+guisSection:NewButton("race clicker", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/frankblox/rbxscripts/main/0raceclickern3w"))()print("Clicked")
+end)
+
+guisSection:NewButton("race cilcker1", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+end)
+
+guisSection:NewButton("doors", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/6kfed0tP"))()
+end)
+
+guisSection:NewButton("doors1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
+end)
+
+MainSection:NewButton("backflip", "ButtonInfo", function()
+    wait(5)
+
+--[[ Info ]]--
+
+local ver = "2.00"
+local scriptname = "feFlip"
+
+
+--[[ Keybinds ]]--
+
+local FrontflipKey = Enum.KeyCode.Z
+local BackflipKey = Enum.KeyCode.X
+local AirjumpKey = Enum.KeyCode.C
+
+
+--[[ Dependencies ]]--
+
+local ca = game:GetService("ContextActionService")
+local zeezy = game:GetService("Players").LocalPlayer
+local h = 0.0174533
+local antigrav
+
+
+--[[ Functions ]]--
+
+function zeezyFrontflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do 
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(-h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyBackflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyAirjump(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+		wait()
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")	
+	end
+end
+
+
+--[[ Binds ]]--
+
+ca:BindAction("zeezyFrontflip",zeezyFrontflip,false,FrontflipKey)
+ca:BindAction("zeezyBackflip",zeezyBackflip,false,BackflipKey)
+ca:BindAction("zeezyAirjump",zeezyAirjump,false,AirjumpKey)
+
+--[[ Load Message ]]--
+
+print(scriptname .. " " .. ver .. " loaded successfully")
+print("made by Zeezy#7203")
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1.5
+notifSound.Volume = 0.15
+notifSound.SoundId = "rbxassetid://170765130"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+
+
+end)
+
+MainSection:NewButton("fe fling power", "ButtonInfo", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/gJC4kvgy'),true))()
+end)
+
+MainSection:NewButton("fe admin script", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
+
+MainSection:NewButton("fe god", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iHavoc101/Genesis-Studios/main/UserInterface/Luminosity.lua", true))()
+
+end)
+
+local Tab = Window:NewTab("more")
+local moreSection = Tab:NewSection("more")
+
+moreSection:NewButton("fe ", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
+end)
+
+moreSection:NewButton("fe1", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+
+end)
+
+moreSection:NewButton("fe2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+moreSection:NewButton("invisble", "to go in invisble do x", function()
+    local key = Enum.KeyCode.X -- key to toggle invisibility
+
+--// dont edit script below
+local invis_on = false
+function onKeyPress(inputObject, chat)
+    if chat then return end
+    if inputObject.KeyCode == key then
+	    invis_on = not invis_on
+    	if invis_on then
+            local savedpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            wait()
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-25.95, 84, 3537.55))
+            wait(.15)
+            local Seat = Instance.new('Seat', game.Workspace)
+            Seat.Anchored = false
+            Seat.CanCollide = false
+            Seat.Name = 'invischair'
+            Seat.Transparency = 1
+            Seat.Position = Vector3.new(-25.95, 84, 3537.55)
+            local Weld = Instance.new("Weld", Seat)
+            Weld.Part0 = Seat
+            Weld.Part1 = game.Players.LocalPlayer.Character:FindFirstChild("Torso") or game.Players.LocalPlayer.Character.UpperTorso
+            wait()
+            Seat.CFrame = savedpos
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Invis On";
+                Duration = 1;
+                Text = "";
+            })
+        else
+            workspace:FindFirstChild('invischair'):Remove()
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Invis Off";
+                Duration = 1;
+                Text = "";
+            })
+        end
+    end
+end
+
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+end)
+
+guisSection:NewButton("mansion tycoon", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XVJosh/ScriptHub/main/MegaMansionTycoon.lua"))()
+end)
+
+guisSection:NewButton("mansion tycoon1", "ButtonInfo", function()
+    syn.run_secure_lua("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")
+end)
+
+guisSection:NewButton("MegaMansionTycoon", "ButtonInfo", function()
+    while true do
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteCalls"):WaitForChild("GameSpecific"):WaitForChild("Main"):WaitForChild("CollectIncome"):InvokeServer()
+end 
+end)
+
+guisSection:NewButton("car dealers tycoon", "ldk", function()
+    loadstring(game:HttpGet('https://weinzspace.com/loadscript.lua'))()
+end)
+
+guisSection:NewButton("car dealers tycoon1", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0carsanta", true))()
+end)
+
+guisSection:NewButton("car dealers tycoon2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IExpIoit/Script/main/UltimateHub"))()
+end)
+
+guisSection:NewButton("car dealers tycoon3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
+end)
+
+guisSection:NewButton("mm2", "ButtonInfo", function()
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+guisSection:NewButton("mm3", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://scripts.luawl.com/Main/Scourge.lua'))()
+end)
+
+guisSection:NewButton("mm4", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+end)
+
+PlayerSection:NewButton("my fly", "ButtonInfo", function()
+    -- Bring to you by NUFFTY12
+-- Enjoy the script!
+ 
+-- Instances:
+ 
+local FlyGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+ 
+--Properties:
+ 
+FlyGui.Name = "FlyGui"
+FlyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+Frame.Parent = FlyGui
+Frame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0685602352, 0, 0.168769717, 0)
+Frame.Size = UDim2.new(0.264544547, 0, 0.100000024, 0)
+ 
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.06324628, 0, 0.400667697, 0)
+TextButton.Size = UDim2.new(0.871157169, 0, 0.495614201, 0)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "fly"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+ 
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 86, 0, 24)
+TextLabel.Font = Enum.Font.Oswald
+TextLabel.Text = "Made by nuffty12"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+ 
+-- Scripts:
+ 
+local function NQWSTGE_fake_script() -- Frame.Fly 
+    local script = Instance.new('LocalScript', Frame)
+ 
+    local plr = script.Parent.Parent.Parent.Parent
+    repeat wait() until plr and plr.Character and plr.Character:findFirstChild("HumanoidRootPart") and plr.Character:findFirstChild("Humanoid") 
+    local mouse = game.Players.LocalPlayer:GetMouse()  
+    repeat wait() until mouse
+    
+    local torso = plr.Character.HumanoidRootPart 
+    local flying = false
+    local deb = true 
+    local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+    local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+    local maxspeed = 1000 
+    local speed = 50
+    function Fly() 
+    local bg = Instance.new("BodyGyro", torso) 
+    bg.P = 9e4 
+    bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+    bg.cframe = torso.CFrame 
+    local bv = Instance.new("BodyVelocity", torso) 
+    bv.velocity = Vector3.new(0,0.1,0) 
+    bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+    repeat wait() 
+    plr.Character.Humanoid.PlatformStand = true 
+    if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+    speed = speed+.5+(speed/maxspeed) 
+    if speed > maxspeed then 
+    speed = maxspeed 
+    end 
+    elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+    speed = speed-1 
+    if speed < 0 then 
+                    speed = 0
+                else
+                    speed = 50
+    end 
+    end 
+    if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+    bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+    lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+    elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+    bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+    else 
+    bv.velocity = Vector3.new(0,0.1,0) 
+    end 
+    bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+    until not flying 
+    ctrl = {f = 0, b = 0, l = 0, r = 0} 
+    lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+        
+    bg:Destroy() 
+    bv:Destroy() 
+        plr.Character.Humanoid.PlatformStand = false 
+        speed = 50
+    end 
+    
+    mouse.KeyDown:connect(function(key) 
+    if key:lower() == "e" then 
+            if flying then flying = false 
+                speed = 50
+    else 
+    flying = true 
+    Fly()
+    
+    end 
+    elseif key:lower() == "w" then 
+    ctrl.f = 1 
+    elseif key:lower() == "s" then 
+    ctrl.b = -1 
+    elseif key:lower() == "a" then 
+    ctrl.l = -1 
+    elseif key:lower() == "d" then 
+    ctrl.r = 1 
+    end 
+    end) 
+    mouse.KeyUp:connect(function(key) 
+    if key:lower() == "w" then 
+    ctrl.f = 0 
+    elseif key:lower() == "s" then 
+    ctrl.b = 0 
+    elseif key:lower() == "a" then 
+    ctrl.l = 0 
+    elseif key:lower() == "d" then 
+    ctrl.r = 0 
+    end 
+    end)
+    
+    plr.Character.Humanoid.StateChanged:Connect(function(o,n)
+        if n == Enum.HumanoidStateType.Running then
+            ctrl.f = 1
+        else
+            ctrl.f = 0
+        end
+    
+    end)
+    script.Parent.TextButton.MouseButton1Click:Connect(function()
+        if flying then
+            flying = false
+            speed = 50
+        else
+            flying = true
+            Fly()
+        end
+    end)
+    
+end
+coroutine.wrap(NQWSTGE_fake_script)()
+local function RAQA_fake_script() -- Frame.Buttons 
+    local script = Instance.new('LocalScript', Frame)
+ 
+    local Trigger = script.Parent.MiniTrext
+    local IsMini = false
+    function CreateTween(Instance,Style,Direction,Time,table,RepeatCount,CanRepeat,Delay)
+        local ts = game:GetService("TweenService")
+        local TweenInfo = TweenInfo.new(Time,Style,Direction,RepeatCount,CanRepeat,Delay)
+        local Tween = ts:Create(Instance,TweenInfo,table)
+        repeat wait() until Tween ~= nil
+        return Tween
+        
+    end
+    Trigger.MouseButton1Click:Connect(function()
+        if IsMini then
+            CreateTween(script.Parent,Enum.EasingStyle.Quad,Enum.EasingDirection.Out,0.5,{Size = UDim2.new(0.265, 0,0.1, 0)},0,false,0.1):Play()
+            IsMini = false
+            Trigger.Text = "-"
+        else
+            CreateTween(script.Parent,Enum.EasingStyle.Quad,Enum.EasingDirection.Out,0.5,{Size = UDim2.new(0.265, 0,0.042, 0)},0,false,0.1):Play()
+            IsMini = true
+            Trigger.Text = "+"
+        end
+    end)
+    script.Parent.Delete.MouseButton1Click:Connect(function()
+        script.Parent.Parent:Destroy()
+    end)
+end
+coroutine.wrap(RAQA_fake_script)()
+local function TKVUMP_fake_script() -- Frame.Drag Gui 
+    local script = Instance.new('LocalScript', Frame)
+ 
+    local UserInputService = game:GetService("UserInputService")
+    
+    local gui = script.Parent
+    
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+    
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+    
+    gui.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+            
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
+end
+coroutine.wrap(TKVUMP_fake_script)()
+end)
+
+
+PlayerSection:NewButton("auto cilcker", "ButtonInfo", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+end)
+
+PlayerSection:NewButton("auto player for paino", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Madness676/3.2Lol/main/AutoPiano3-2.lua", true))()
+end)
+
+PlayerSection:NewButton("speed gui by me", "ButtonInfo", function()
+    -- Notification
+wait(3)
+
+warn("loading Celerestial WalkSpeed GUI")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "nufftys12 WalkSpeed gui";
+    Text = "Loaded!";
+    Icon = "";
+    Duration = "2";
+})
+wait(2)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Credit";
+    Text = "By : nuffty12";
+    Icon = "";
+    Duration = "2";
+})
+-- Instances:
+
+local SpeedGUI = Instance.new("ScreenGui")
+local SpeedGUI_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local SpeedValue = Instance.new("TextBox")
+local SetSpeed = Instance.new("TextButton")
+local ResetSpeed = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+SpeedGUI.Name = "Speed GUI"
+SpeedGUI.Parent = game.CoreGui
+
+SpeedGUI_2.Name = "SpeedGUI"
+SpeedGUI_2.Parent = SpeedGUI
+SpeedGUI_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedGUI_2.Position = UDim2.new(0.00799503271, 0, 0.883194327, 0)
+SpeedGUI_2.Size = UDim2.new(0, 241, 0, 70)
+
+TextLabel.Parent = SpeedGUI_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 217, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Enter Speed:"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+SpeedValue.Name = "SpeedValue"
+SpeedValue.Parent = SpeedGUI_2
+SpeedValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedValue.Position = UDim2.new(0, 0, 0.326807767, 0)
+SpeedValue.Size = UDim2.new(0, 241, 0, 24)
+SpeedValue.Font = Enum.Font.SourceSans
+SpeedValue.Text = ""
+SpeedValue.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedValue.TextSize = 14.000
+
+SetSpeed.Name = "SetSpeed"
+SetSpeed.Parent = SpeedGUI_2
+SetSpeed.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+SetSpeed.Position = UDim2.new(0.522821605, 0, 0.669664681, 0)
+SetSpeed.Size = UDim2.new(0, 115, 0, 23)
+SetSpeed.Font = Enum.Font.SourceSans
+SetSpeed.Text = "Set"
+SetSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetSpeed.TextSize = 14.000
+
+ResetSpeed.Name = "ResetSpeed"
+ResetSpeed.Parent = SpeedGUI_2
+ResetSpeed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ResetSpeed.Position = UDim2.new(0, 0, 0.669664681, 0)
+ResetSpeed.Size = UDim2.new(0, 126, 0, 23)
+ResetSpeed.Font = Enum.Font.SourceSans
+ResetSpeed.Text = "Reset"
+ResetSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetSpeed.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = SpeedGUI_2
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.900414944, 0, 0, 0)
+Close.Size = UDim2.new(0, 24, 0, 22)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+--Scripts:
+
+Close.MouseButton1Down:connect(function()
+	SpeedGUI_2.Visible = false
+end)
+
+SetSpeed.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = SpeedValue.Text
+	game.StarterGui:SetCore("SendNotification", {
+    Title = "WalkSpeedGui";
+    Text = "Speed has been set to".. SpeedValue.Text;
+    Icon = "";
+    Duration = "2";
+})
+end)
+
+ResetSpeed.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game.StarterGui:SetCore("SendNotification", {
+    Title = "WalkSpeedGui";
+    Text = "your speed be reset fuck off now.";
+    Icon = "";
+    Duration = "2";
+})
+
+end)
+end)
+
+PlayerSection:NewButton("chatlogs", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+end)
+
+local Tab = Window:NewTab("aimlock for games")
+local Section = Tab:NewSection("aimlock for games")
+
+
+local Tab = Window:NewTab("Hubs for aimlock")
+local Section = Tab:NewSection("Hubs for aimlock")
+
+Section:NewButton("Aimlock", "ButtonInfo", function()
+    https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV2/main/SCRIPTHUBV2
+end)
+
+
+Section:NewButton("fake macro", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/youtubetutorials123/helo/main/123"))()
+end)
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs")
+
+Section:NewButton("V.G Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Section:NewButton("Bolts Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))()
+
+end)
+
+Section:NewButton("Nebula Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://tuba.bio/nebula/scripts/loader.lua', true))()
+end)
+
+Section:NewButton("Moon V3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/voiddscripts/moon/main/script.lua"))()
+end)
+
+Section:NewButton("Skeered Hub", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Skeereddo/name/main/krnl', true))()
+end)
